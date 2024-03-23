@@ -1,60 +1,10 @@
-<section>
-  <p>Salário bruto: <span>R$ 12 mil</span></p>
-  <p>Salário líquido: <span>R$ 9.044,64</span></p>
-</section>
-<br>
-<section id="content">
-  <div class="descontos">
-    <header>
-      <strong>Descontos:</strong>
-    </header>
-  
-    <article>
-      <ul>
-        <li>INSS:</li>
-        <li>IRRF:</li>
-        <li>Plano de saúde:</li>
-        <li>Vale refeição:</li>
-        <li>Vale alimentação:</li>
-        <li>Vale transporte:</li>
-      </ul>
-  
-      <strong>Total:</strong>
-    </article>
-  </div>
+<section class="header">
+  <p>2024</p>
+  <p>Salário líquido</p>
+  <b [class.esconderValores]="!visualizarValores">R$12.000,00</b>
 
-  <div class="balanco">
-    <header>
-      <strong>Balanço financeiro:</strong>
-    </header>
-  
-    <article>
-      <ul>
-        <li>Gastos:</li>
-        <li>Investir:</li>
-        <li>Educação:</li>
-        <li>Custo de vidas:</li>
-      </ul>
-  
-      <strong>Total:</strong>
-    </article>
-  </div>
-</section>
-<br>
-<section id="content">
-  <div class="reserva">
-    <header>
-      <strong>Reserva de emergência:</strong>
-    </header>
-  
-    <article>
-      <ul>
-        <li>Aporte:</li>
-        <li>Tenho:</li>
-        <li>Falta:</li>
-      </ul>
-  
-      <strong>Total:</strong>
-    </article>
-  </div>
+  <a title="visualização" 
+    (click)="handleVisualizacaoValores()">
+    <fa-icon [icon]="faEye"></fa-icon>
+  </a>
 </section>

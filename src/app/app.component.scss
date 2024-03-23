@@ -22,11 +22,12 @@ body, input, button {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--title-color);
-  font-family: Ubuntu;
+  font-family: sans-serif;
 }
 
 
 // -----------------
 #page {
-  margin: 2rem;
+  background-color: #f2f1f1;
+  padding: 5px;
 }
