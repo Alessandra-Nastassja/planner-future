@@ -1,27 +1,26 @@
+@import url('../../../assets/segmento/theme-style.scss');
+
+$primary: #1f332c;
+$secundary: #234438;
+$white: #fff;
+
 .header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  font-family: sans-serif;
+  background-color: $primary;
+  padding: 15px;
 
-  background-color: white;
-  margin: 1rem;
-  border-radius: 16px;
-  box-shadow: 15px 14px 15px -3px rgba(0,0,0,0.1);
+  article {
+    display: flex;
+    flex-direction: column;
 
-  b {
-    font-size: 1.6em;
-  }
-
-  a {
-    margin: 1em;
+    .content-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   .esconderValores {
     color: transparent;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
-
   }
 }

@@ -16,6 +16,11 @@ export class DashboardComponent {
   faEye = faEye;
   visualizarValores;
 
+  itensButtons = [
+    { name: 'Send', icon: 'faEye', link: '' },
+    { name: 'Request', icon: '', link: '' },
+  ]
+
   constructor(@Inject(DOCUMENT) private document: Document) {
     let localStorage = document.defaultView?.localStorage;
     let setVisualizacaoValores: any;
