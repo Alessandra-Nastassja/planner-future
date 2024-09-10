@@ -1,7 +1,7 @@
-[![Netlify Status]()
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05db2d45-2c54-48e9-a975-61c668792096/deploy-status)](https://app.netlify.com/sites/planer-future/deploys)
 
 <h1 align="center">
-  Todo List
+  Planner future
 </h1>
 <p align="center">Planner future</p>
 <p align="center">
