@@ -2,23 +2,37 @@ import { Component, Inject } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faEye, faBell } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faBell, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { CircleImageComponent } from '../../../shared/components/circle-image/circle-image.component';
 
 @Component({
   selector: 'app-total-balance',
   standalone: true,
-  imports: [FontAwesomeModule, CommonModule],
+  imports: [FontAwesomeModule, CommonModule, CircleImageComponent],
   templateUrl: './total-balance.component.html',
   styleUrl: './total-balance.component.scss'
 })
 export class TotalBalanceComponent {
   faEye = faEye;
   faBell = faBell;
+  faArrowDown = faArrowDown;
+  faArrowUp = faArrowUp;
+
   visualizarValores;
 
   itensButtons = [
-    { name: 'Send', icon: 'faEye', link: '' },
-    { name: 'Request', icon: '', link: '' },
+    { name: 'Send', icon: faArrowDown, link: '' },
+    { name: 'Request', icon: faArrowUp, link: '' },
+  ]
+
+  dadoClient = [
+    { 
+      name: "Charles Oliveira Jr.", 
+      image: "https://img.freepik.com/fotos-gratis/retrato-de-negro-americano-olhando-para-cima_23-2148749586.jpg",
+      finance: {
+        totalBalance: 12.000,
+      }
+    }
   ]
 
   constructor(@Inject(DOCUMENT) private document: Document) {

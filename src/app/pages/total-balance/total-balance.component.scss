@@ -1,5 +1,3 @@
-@import url('../../../assets/segmento/theme-style.scss');
-
 $primary: #1f332c;
 $secundary: #5b8c7c;
 $white: #fff;
@@ -28,22 +26,6 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-
-
-.circle {
-  background-color: #aaa;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  overflow: hidden;
-  position: relative;
-
-  > img {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
   }
 }
 
