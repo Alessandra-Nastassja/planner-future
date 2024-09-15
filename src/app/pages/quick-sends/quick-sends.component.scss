@@ -1,0 +1,32 @@
+$gray: #c2c2c2;
+
+section {
+  display: flex;
+  flex-direction: column;
+
+  .content-buttons {
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    gap: 5px;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .button {
+      border: 1px solid $gray;
+      border-radius: 30px;
+      
+      &--with-image {
+        padding: 2px 15px 2px 2px;
+      }
+      &--no-image {
+        padding: 7px 10px;
+      }
+    }
+    
+  }
+}
