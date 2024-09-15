@@ -3,7 +3,9 @@
 <h1 align="center">
   Planner future
 </h1>
-<p align="center">Planner future</p>
+<p align="center">
+  In the project, I have been developed a simple finance application using Angular 18+.
+</p>
 <p align="center">
   <a href="https://planer-future.netlify.app" target="_black">Demo</a>
 </p>

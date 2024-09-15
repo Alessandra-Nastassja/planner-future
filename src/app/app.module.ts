@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { TotalBalanceComponent } from './pages/total-balance/total-balance.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    TotalBalanceComponent
   ],
   imports: [
     CommonModule,

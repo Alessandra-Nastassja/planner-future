@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashboardComponent } from './dashboard.component';
+import { QuickSendsComponent } from './quick-sends.component';
 
-describe('DashboardComponent', () => {
-  let component: DashboardComponent;
-  let fixture: ComponentFixture<DashboardComponent>;
+describe('QuickSendsComponent', () => {
+  let component: QuickSendsComponent;
+  let fixture: ComponentFixture<QuickSendsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DashboardComponent]
+      imports: [QuickSendsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(DashboardComponent);
+    fixture = TestBed.createComponent(QuickSendsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
