@@ -1,0 +1,35 @@
+$primary: #1f332c;
+$secundary: #5b8c7c;
+$white: #fff;
+
+section {
+  background-color: $primary;
+  padding: 15px;
+
+  .content-salary {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .header-salary {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .content-balance {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.esconderValores {
+  color: transparent;
+  text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}

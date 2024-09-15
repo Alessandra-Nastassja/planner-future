@@ -1,3 +1,5 @@
+@import url('./assets/segmento/theme-style.scss');
+
 @font-face {
   font-family: roboto;
   src: url('./assets/fonts/Roboto-Regular.ttf') format("opentype");
@@ -21,4 +23,8 @@ body, input, button {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'roboto' !important;
   font-weight: 400;
+}
+
+p, small {
+  font-family: 'roboto' !important;
 }
