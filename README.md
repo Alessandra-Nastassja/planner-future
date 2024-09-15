@@ -21,3 +21,11 @@
 </p>
 
 ****
+## Technologies
+
+* Angular 18+
+
+****
+## License
+
+This project is managing the MIT license. Please take a look at a file about it for more details. 
