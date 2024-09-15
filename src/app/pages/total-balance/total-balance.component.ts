@@ -30,7 +30,7 @@ export class TotalBalanceComponent {
       name: "Charles Oliveira Jr.", 
       image: "https://img.freepik.com/fotos-gratis/retrato-de-negro-americano-olhando-para-cima_23-2148749586.jpg",
       finance: {
-        totalBalance: 12.000,
+        totalBalance: 12000,
       }
     }
   ]
