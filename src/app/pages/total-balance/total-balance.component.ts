@@ -5,13 +5,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEye, faBell } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-total-balance',
   standalone: true,
   imports: [FontAwesomeModule, CommonModule],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.scss'
+  templateUrl: './total-balance.component.html',
+  styleUrl: './total-balance.component.scss'
 })
-export class DashboardComponent {
+export class TotalBalanceComponent {
   faEye = faEye;
   faBell = faBell;
   visualizarValores;
