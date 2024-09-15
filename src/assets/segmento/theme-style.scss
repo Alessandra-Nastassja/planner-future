@@ -1,6 +1,8 @@
 $primary: #1f332c;
 $secundary: #2e4940;
 $third: #6d847c;
+
+$gray: #c2c2c2;
 $white: #ffffff;
 
 // Spacing
@@ -88,6 +90,9 @@ $white: #ffffff;
 }
 
 // Colors
+.text-color-gray {
+  color: $gray;
+}
 .text-color-white {
   color: $white;
 }
@@ -111,6 +116,6 @@ $white: #ffffff;
 
 .button-regular {
   background-color: #2e4940;
-  border-radius: 20px;
-  padding: 10px 15px;
+  border-radius: 15px;
+  padding: 10px 12px;
 }

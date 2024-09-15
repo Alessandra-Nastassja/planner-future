@@ -28,7 +28,7 @@ export class TotalBalanceComponent {
   dadoClient = [
     { 
       name: "Charles Oliveira Jr.", 
-      image: "https://img.freepik.com/fotos-gratis/retrato-de-negro-americano-olhando-para-cima_23-2148749586.jpg",
+      image: "https://img.freepik.com/fotos-gratis/retrato-de-um-empresario-bem-sucedido-de-pele-escura-usando-um-terno-formal-cinza-de-pe-contra-a-parede_273609-5600.jpg",
       finance: {
         totalBalance: 12000,
       }
