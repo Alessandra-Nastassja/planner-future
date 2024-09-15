@@ -2,8 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
-
+import { faEye, faBell } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,6 +13,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 })
 export class DashboardComponent {
   faEye = faEye;
+  faBell = faBell;
   visualizarValores;
 
   itensButtons = [

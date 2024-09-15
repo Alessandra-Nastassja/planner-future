@@ -1,26 +1,53 @@
 @import url('../../../assets/segmento/theme-style.scss');
 
 $primary: #1f332c;
-$secundary: #234438;
+$secundary: #5b8c7c;
 $white: #fff;
 
-.header {
+header {
   background-color: $primary;
   padding: 15px;
 
-  article {
+  .content-salary {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
 
-    .content-button {
+    .header-salary {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      gap: 20px;
     }
   }
 
-  .esconderValores {
-    color: transparent;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  .content-balance {
+    display: flex;
+    flex-direction: column;
   }
+
+  .content-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  position: relative;
+
+  > img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.esconderValores {
+  color: transparent;
+  text-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
