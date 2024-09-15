@@ -3,9 +3,9 @@
 <h1 align="center">
   Planner future
 </h1>
-<p align="center">Planner future</p>
 <p align="center">
-  <a href="https://planer-future.netlify.app" target="_black">Demo</a>
+  This project is about a simple finance app. However, if you are curious, 
+  <a href="https://planer-future.netlify.app" target="_black">click here</a>.
 </p>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/Alessandra-Nastassja/planner-future?color=%231f332c">
@@ -15,6 +15,9 @@
   <a href="https://www.linkedin.com/in/alessandra-nastassja/">
     <img alt="Made by Alessandra Nastassja" src="https://img.shields.io/badge/made%20by-AlessandraNastassja-%231f332c">
   </a>
+</p>
+<p align="center">
+  <img alt="Prototipo do demo" src="https://raw.githubusercontent.com/Alessandra-Nastassja/planner-future/main/src/assets/imagens/prototipo.png">
 </p>
 
 ****
