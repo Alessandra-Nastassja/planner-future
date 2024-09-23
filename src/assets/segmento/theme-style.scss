@@ -85,6 +85,9 @@ $white: #ffffff;
 }
 
 // Topology
+.title-14 {
+  font-size: 14px;
+}
 .title-32 {
   font-size: 32px;
 }
@@ -113,9 +116,12 @@ $white: #ffffff;
   border-radius: 20px;
   padding: 10px 15px;
 }
+.button-light:hover {
+  background-color: $secundary;
+}
 
 .button-regular {
   background-color: #2e4940;
   border-radius: 15px;
-  padding: 10px 12px;
+  padding: 10px 12px; 
 }
