@@ -1,0 +1,17 @@
+@if (itensButtons) {
+  <div class="content-menu">
+    @for (item of itensButtons; track $index) {
+      <a class="title-14" 
+        [class.item-menu]="item.name"
+        [class.item-menu--main]="!item.name"
+        >
+        <fa-icon [class.m-b-4]="item.name" [icon]="item.icon"></fa-icon>
+        @if (item.name) {
+          <small >{{item.name}}</small>
+        }
+      </a>
+    }
+  </div>
+} @else {
+  <p>Doesn't work menu!</p>
+}

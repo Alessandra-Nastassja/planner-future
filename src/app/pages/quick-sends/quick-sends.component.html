@@ -1,0 +1,16 @@
+<section class="m-l-16 m-t-16 m-b-16">
+  <app-header name="Quick sends/requests" class="m-b-8"/>
+
+  <div class="content-buttons m-t-8">
+    <a class="text-color-gray button button--no-image m-r-8">
+      <fa-icon [icon]="faPlus"></fa-icon>
+    </a>
+
+    @for (item of dataClients; track $index) {
+      <a class="text-color-gray button button--with-image">
+        <app-circle-image img="{{item.image}}"/>
+        {{item.name}}
+      </a>
+    }
+  </div>
+</section>

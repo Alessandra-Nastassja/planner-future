@@ -1,0 +1,35 @@
+$primary: #1f332c;
+$four: #95f173;
+$gray:  #c2c2c2;
+$white: #ffffff;
+
+.content-menu {
+  position: fixed;
+  bottom:0px !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid $gray;
+  background-color: $white;
+  padding: 8px;
+
+  .item-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $gray;
+  }
+  .item-menu:hover {
+    color: $primary;
+    font-weight: 800;
+  }
+
+  .item-menu--main {
+    position: relative;
+    bottom: 30px;
+    background-color: $four;
+    padding: 13px 15px;
+    border-radius: 20px;
+    color: $primary;
+  }
+}
