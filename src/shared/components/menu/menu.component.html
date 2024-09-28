@@ -4,6 +4,8 @@
       <a class="title-14" 
         [class.item-menu]="item.name"
         [class.item-menu--main]="!item.name"
+        [routerLink]="item.link"
+        [attr.disabled]="!item.link"
         >
         <fa-icon [class.m-b-4]="item.name" [icon]="item.icon"></fa-icon>
         @if (item.name) {

@@ -13,6 +13,10 @@ $white: #ffffff;
   background-color: $white;
   padding: 8px;
 
+  a {
+    text-decoration: none;
+  }
+
   .item-menu {
     display: flex;
     flex-direction: column;
