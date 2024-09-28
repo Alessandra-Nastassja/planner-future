@@ -13,22 +13,21 @@ $white: #ffffff;
   background-color: $white;
   padding: 8px;
 
-  a {
-    text-decoration: none;
-  }
+  a { text-decoration: none; }
 
-  .item-menu {
+  a.item-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: $gray;
   }
-  .item-menu:hover {
+
+  a.item-menu:hover {
     color: $primary;
     font-weight: 800;
   }
 
-  .item-menu--main {
+  a.item-menu--main {
     position: relative;
     bottom: 30px;
     background-color: $four;
