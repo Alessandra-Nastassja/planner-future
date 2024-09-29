@@ -3,9 +3,9 @@ $four: #95f173;
 $gray:  #c2c2c2;
 $white: #ffffff;
 
-.content-menu {
+nav {
   position: fixed;
-  bottom:0px !important;
+  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -34,5 +34,12 @@ $white: #ffffff;
     padding: 13px 15px;
     border-radius: 20px;
     color: $primary;
+  }
+}
+
+// todo: adjustment width of the menu
+@media (min-width: 1024px) {
+  nav {
+
   }
 }
