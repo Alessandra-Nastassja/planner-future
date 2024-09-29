@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHome, faTicket, faQrcode, faReceipt, faGear } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,7 +8,7 @@ import { faHome, faTicket, faQrcode, faReceipt, faGear } from '@fortawesome/free
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [FontAwesomeModule, CommonModule],
+  imports: [FontAwesomeModule, CommonModule, RouterModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
@@ -19,7 +20,7 @@ export class MenuComponent {
   faGear = faGear;
 
   itensButtons = [
-    { name: 'Home', icon: faHome, link: null },
+    { name: 'Home', icon: faHome, link: '/home' },
     { name: 'Transactions', icon: faTicket, link: null },
     { name: null, icon: faQrcode, link: null },
     { name: 'Report', icon: faReceipt, link: null },
