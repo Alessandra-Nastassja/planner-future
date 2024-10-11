@@ -18,7 +18,7 @@
     <p class="m-b-4 text-color-third">Total Balance</p>
     <h1 class="m-t-4 title-32 text-color-white" 
       [class.esconderValores]="!visualizarValores">
-      {{dadoClient[0].finance.totalBalance | currency:'BRL':true:'1.2-2' }}
+      {{dadoClient[0].finance.totalBalance | currency    }}
     </h1>
   </article>
 
@@ -38,4 +38,6 @@
         <fa-icon [icon]="faEye"></fa-icon>
       </a>
   </article>
+  
+  <ng-content />
 </section>
