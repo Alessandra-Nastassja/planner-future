@@ -19,7 +19,7 @@
   </a>
 </p>
 <p align="center">
-  <img alt="Prototipo do demo" src="">
+  <img alt="Prototipo do demo" src="https://raw.githubusercontent.com/Alessandra-Nastassja/planner-future/refs/heads/feature/upgrade-readme/src/assets/imagens/demo.gif" width="150px">
 </p>
 
 ****
