@@ -24,6 +24,8 @@
 ## Technologies
 
 * Angular 18+
+* Next.js
+* RXJS
 
 ****
 ## License
