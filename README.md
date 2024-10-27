@@ -4,8 +4,10 @@
   Planner future
 </h1>
 <p align="center">
-  This project is about a simple finance app. However, if you are curious, 
-  <a href="https://planer-future.netlify.app" target="_black">click here</a>.
+  This project is about a simple finance app.
+</p>
+<p align="center">
+   <a href="https://planer-future.netlify.app" target="_black">Demo</a>.
 </p>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/repo-size/Alessandra-Nastassja/planner-future?color=%231f332c">
@@ -17,13 +19,15 @@
   </a>
 </p>
 <p align="center">
-  <img alt="Prototipo do demo" src="https://raw.githubusercontent.com/Alessandra-Nastassja/planner-future/main/src/assets/imagens/prototipo.png">
+  <img alt="Prototipo do demo" src="https://raw.githubusercontent.com/Alessandra-Nastassja/planner-future/refs/heads/feature/upgrade-readme/src/assets/imagens/demo.gif" width="150px">
 </p>
 
 ****
 ## Technologies
 
 * Angular 18+
+* Next.js
+* RXJS
 
 ****
 ## License
