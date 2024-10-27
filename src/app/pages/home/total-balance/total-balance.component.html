@@ -1,6 +1,6 @@
 <section>
   <article class="content-salary m-b-16 m-t-16">
-    <div class="header-salary">
+    <div class="content-salary__header">
       <app-circle-image [img]="dadoClient[0].image" />
       
       <div>
@@ -18,7 +18,7 @@
     <p class="m-b-4 text-color-third">Total Balance</p>
     <h1 class="m-t-4 title-32 text-color-white" 
       [class.esconderValores]="!visualizarValores">
-      {{dadoClient[0].finance.totalBalance | currency    }}
+      {{ dadoClient[0].finance.totalBalance | currency }}
     </h1>
   </article>
 
