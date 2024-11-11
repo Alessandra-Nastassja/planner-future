@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { CurrencyService } from '../../../../shared/services/currency.service';
 
 
 @Component({
@@ -13,4 +14,10 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 })
 export class AccountBalanceComponent {
   faArrowRight = faArrowRight;
+
+  private currencyService = inject(CurrencyService);
+
+  handleVisualizacaoValores(): Boolean {
+    return this.currencyService.handleVisualizacaoValores();
+  }
 }

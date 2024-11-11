@@ -6,9 +6,17 @@ import { Inject, Injectable } from '@angular/core';
 })
 export class CurrencyService {
 
-  visualizarValores;
+  visualizarValores: Boolean = false;
 
   constructor(@Inject(DOCUMENT) private document: Document) { 
+    this.setStateHiddenCurrencyStorage();
+  }
+
+  ngOnInit(): void {
+    this.getStateHiddenCurrencyStorage();
+  }
+
+  setStateHiddenCurrencyStorage(): void {
     let localStorage = document.defaultView?.localStorage;
     let setVisualizacaoValores: any;
     
@@ -18,8 +26,11 @@ export class CurrencyService {
     }
   }
 
-  handleVisualizacaoValores(){
-    this.visualizarValores = !this.visualizarValores;
+  getStateHiddenCurrencyStorage(): void {
     localStorage.setItem('visualizarValores', JSON.stringify(this.visualizarValores));
+  }
+
+  handleVisualizacaoValores(): Boolean{
+    return this.visualizarValores = !this.visualizarValores;
   }
 }

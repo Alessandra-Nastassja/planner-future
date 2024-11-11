@@ -21,8 +21,6 @@ export class TotalBalanceComponent {
   faArrowDown = faArrowDown;
   faArrowUp = faArrowUp;
 
-  visualizarValores: any;
-
   itensButtons = [
     { name: 'Send', icon: faArrowDown, link: '' },
     { name: 'Request', icon: faArrowUp, link: '' },
@@ -40,9 +38,7 @@ export class TotalBalanceComponent {
 
   private currencyService = inject(CurrencyService);
 
-  constructor() {}
-
-  handleVisualizacaoValores() {
-    this.currencyService.handleVisualizacaoValores()
+  handleVisualizacaoValores(): Boolean {
+    return this.currencyService.handleVisualizacaoValores();
   }
 }
