@@ -4,7 +4,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEye, faBell, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
-import { CircleImageComponent } from '../../../../shared/components/circle-image/circle-image.component';
+import { CircleImageComponent } from '../../../shared/components/circle-image/circle-image.component';
 
 @Component({
   selector: 'app-total-balance',

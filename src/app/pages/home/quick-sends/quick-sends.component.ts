@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../../../shared/components/header/header.component';
-import { CircleImageComponent } from "../../../../shared/components/circle-image/circle-image.component";
+import { HeaderComponent } from '../../../shared/components/header/header.component';
+import { CircleImageComponent } from "../../../shared/components/circle-image/circle-image.component";
 
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
