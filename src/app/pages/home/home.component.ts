@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuComponent } from '../../../shared/components/menu/menu.component';
+import { MenuComponent } from '../../shared/components/menu/menu.component';
 import { QuickSendsComponent } from './quick-sends/quick-sends.component';
 import { TotalBalanceComponent } from './total-balance/total-balance.component';
 import { RouterModule } from '@angular/router';
