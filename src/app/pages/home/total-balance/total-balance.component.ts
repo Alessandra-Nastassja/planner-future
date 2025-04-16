@@ -1,8 +1,10 @@
-import { Component, Inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEye, faBell, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
+
+import { CurrencyService } from '../../../../shared/services/currency.service';
 
 import { CircleImageComponent } from '../../../../shared/components/circle-image/circle-image.component';
 
@@ -14,12 +16,12 @@ import { CircleImageComponent } from '../../../../shared/components/circle-image
   styleUrl: './total-balance.component.scss'
 })
 export class TotalBalanceComponent {
+  isBlurred: boolean = true;
+
   faEye = faEye;
   faBell = faBell;
   faArrowDown = faArrowDown;
   faArrowUp = faArrowUp;
-
-  visualizarValores;
 
   itensButtons = [
     { name: 'Send', icon: faArrowDown, link: '' },
@@ -36,19 +38,11 @@ export class TotalBalanceComponent {
     }
   ]
 
-  constructor(@Inject(DOCUMENT) private document: Document) {
-    let localStorage = document.defaultView?.localStorage;
-    let setVisualizacaoValores: any;
-    
-    if (localStorage) {
-      setVisualizacaoValores = localStorage.getItem('visualizarValores');
-      this.visualizarValores = JSON.parse(setVisualizacaoValores);
-    }
-    
+  constructor(private currencyService: CurrencyService) {
+    this.currencyService.visualizarValores$.subscribe(val => this.isBlurred = val);
   }
 
-  handleVisualizacaoValores(){
-    this.visualizarValores = !this.visualizarValores;
-    localStorage.setItem('visualizarValores', JSON.stringify(this.visualizarValores));
+  handleVisualizacaoValores(): void {
+    this.currencyService.handleVisualizacaoValores();
   }
 }

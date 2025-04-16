@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { CurrencyService } from '../../../../shared/services/currency.service';
 
 
 @Component({
@@ -12,5 +13,15 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './account-balance.component.scss'
 })
 export class AccountBalanceComponent {
+  isBlurred: boolean = true;
+  
   faArrowRight = faArrowRight;
+
+  constructor(private currencyService: CurrencyService) {
+    this.currencyService.visualizarValores$.subscribe(val => this.isBlurred = val);
+  }
+
+  handleVisualizacaoValores(): void {
+    this.currencyService.handleVisualizacaoValores();
+  }
 }

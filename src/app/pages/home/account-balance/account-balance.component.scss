@@ -1,3 +1,8 @@
+$primary: #1f332c;
+$secundary: #5b8c7c;
+$third: #95f173;
+$white: #fff;
+
 :host {
   display: flex;
   justify-content: space-evenly;
@@ -13,7 +18,7 @@
     
     &__header {
       border-radius: 15px 0 0 15px;
-      background-color: #ffffff;
+      background-color: $white;
       padding: 10px 75px 10px 10px;
       width: 100%;
     }
@@ -25,7 +30,7 @@
       justify-content: space-between;
       padding: 10px;
       border-radius: 0 15px 15px 0;
-      background-color: #95f173;
+      background-color: $third;
     }
   
     img {
