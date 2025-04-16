@@ -1,36 +1,20 @@
 import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
+import { log } from 'node:console';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CurrencyService {
+  private visualizarValores = new BehaviorSubject<boolean>(true);
+  visualizarValores$ = this.visualizarValores.asObservable();
 
-  visualizarValores: Boolean = false;
-
-  constructor(@Inject(DOCUMENT) private document: Document) { 
-    this.setStateHiddenCurrencyStorage();
+  handleVisualizacaoValores(){
+    this.visualizarValores.next(!this.visualizarValores.value);
   }
 
-  ngOnInit(): void {
-    this.getStateHiddenCurrencyStorage();
-  }
-
-  setStateHiddenCurrencyStorage(): void {
-    let localStorage = document.defaultView?.localStorage;
-    let setVisualizacaoValores: any;
-    
-    if (localStorage) {
-      setVisualizacaoValores = localStorage.getItem('visualizarValores');
-      this.visualizarValores = JSON.parse(setVisualizacaoValores);
-    }
-  }
-
-  getStateHiddenCurrencyStorage(): void {
-    localStorage.setItem('visualizarValores', JSON.stringify(this.visualizarValores));
-  }
-
-  handleVisualizacaoValores(): Boolean{
-    return this.visualizarValores = !this.visualizarValores;
+  setBlur(value: boolean) {
+    this.visualizarValores.next(value);
   }
 }

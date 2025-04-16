@@ -16,6 +16,8 @@ import { CircleImageComponent } from '../../../../shared/components/circle-image
   styleUrl: './total-balance.component.scss'
 })
 export class TotalBalanceComponent {
+  isBlurred: boolean = true;
+
   faEye = faEye;
   faBell = faBell;
   faArrowDown = faArrowDown;
@@ -36,9 +38,11 @@ export class TotalBalanceComponent {
     }
   ]
 
-  private currencyService = inject(CurrencyService);
+  constructor(private currencyService: CurrencyService) {
+    this.currencyService.visualizarValores$.subscribe(val => this.isBlurred = val);
+  }
 
-  handleVisualizacaoValores(): Boolean {
-    return this.currencyService.handleVisualizacaoValores();
+  handleVisualizacaoValores(): void {
+    this.currencyService.handleVisualizacaoValores();
   }
 }

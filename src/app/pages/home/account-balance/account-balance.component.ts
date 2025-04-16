@@ -13,11 +13,15 @@ import { CurrencyService } from '../../../../shared/services/currency.service';
   styleUrl: './account-balance.component.scss'
 })
 export class AccountBalanceComponent {
+  isBlurred: boolean = true;
+  
   faArrowRight = faArrowRight;
 
-  private currencyService = inject(CurrencyService);
+  constructor(private currencyService: CurrencyService) {
+    this.currencyService.visualizarValores$.subscribe(val => this.isBlurred = val);
+  }
 
-  handleVisualizacaoValores(): Boolean {
-    return this.currencyService.handleVisualizacaoValores();
+  handleVisualizacaoValores(): void {
+    this.currencyService.handleVisualizacaoValores();
   }
 }

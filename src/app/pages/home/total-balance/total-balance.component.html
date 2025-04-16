@@ -17,7 +17,7 @@
   <article class="content-balance m-t-32">
     <p class="m-b-4 text-color-third">Total Balance</p>
     <h1 class="m-t-4 title-32 text-color-white" 
-      [class.esconderValores]="!handleVisualizacaoValores()">
+      [class.esconderValores]="isBlurred">
       {{dadoClient[0].finance.totalBalance | currency    }}
     </h1>
   </article>
