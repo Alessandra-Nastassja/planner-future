@@ -4,11 +4,17 @@ import { CircleImageComponent } from "../../../../shared/components/circle-image
 
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-quick-sends',
   standalone: true,
-  imports: [HeaderComponent, CircleImageComponent, FontAwesomeModule],
+  imports: [
+    HeaderComponent, 
+    CircleImageComponent, 
+    FontAwesomeModule,
+    RouterLink
+  ],
   templateUrl: './quick-sends.component.html',
   styleUrl: './quick-sends.component.scss'
 })
@@ -32,4 +38,9 @@ export class QuickSendsComponent {
       finance: null
     }
   ]
+parameter: any;
+
+  addClients(): void {
+    alert('add new client');
+  }
 }

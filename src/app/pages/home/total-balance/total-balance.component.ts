@@ -7,11 +7,19 @@ import { faEye, faBell, faArrowDown, faArrowUp } from '@fortawesome/free-solid-s
 import { CurrencyService } from '../../../../shared/services/currency.service';
 
 import { CircleImageComponent } from '../../../../shared/components/circle-image/circle-image.component';
+import { RouterLink } from '@angular/router';
+import { NotificationsComponent } from "./notifications/notifications.component";
 
 @Component({
   selector: 'app-total-balance',
   standalone: true,
-  imports: [FontAwesomeModule, CommonModule, CircleImageComponent],
+  imports: [
+    FontAwesomeModule,
+    CommonModule,
+    CircleImageComponent,
+    RouterLink,
+    NotificationsComponent
+],
   templateUrl: './total-balance.component.html',
   styleUrl: './total-balance.component.scss'
 })
@@ -19,13 +27,12 @@ export class TotalBalanceComponent {
   isBlurred: boolean = true;
 
   faEye = faEye;
-  faBell = faBell;
   faArrowDown = faArrowDown;
   faArrowUp = faArrowUp;
 
   itensButtons = [
-    { name: 'Send', icon: faArrowDown, link: '' },
-    { name: 'Request', icon: faArrowUp, link: '' },
+    { name: 'Send', icon: faArrowDown, link: 'send' },
+    { name: 'Request', icon: faArrowUp, link: 'request' },
   ]
 
   dadoClient = [
