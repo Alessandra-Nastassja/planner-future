@@ -8,16 +8,18 @@ import { CurrencyService } from '../../../../shared/services/currency.service';
 
 import { CircleImageComponent } from '../../../../shared/components/circle-image/circle-image.component';
 import { RouterLink } from '@angular/router';
+import { NotificationsComponent } from "./notifications/notifications.component";
 
 @Component({
   selector: 'app-total-balance',
   standalone: true,
   imports: [
-    FontAwesomeModule, 
-    CommonModule, 
+    FontAwesomeModule,
+    CommonModule,
     CircleImageComponent,
-    RouterLink
-  ],
+    RouterLink,
+    NotificationsComponent
+],
   templateUrl: './total-balance.component.html',
   styleUrl: './total-balance.component.scss'
 })
@@ -25,7 +27,6 @@ export class TotalBalanceComponent {
   isBlurred: boolean = true;
 
   faEye = faEye;
-  faBell = faBell;
   faArrowDown = faArrowDown;
   faArrowUp = faArrowUp;
 
