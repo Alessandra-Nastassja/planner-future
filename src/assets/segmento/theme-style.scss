@@ -118,7 +118,9 @@ $white: #ffffff;
   border: 1px solid $secundary;
   border-radius: 20px;
   padding: 10px 15px;
+  text-decoration: none;
 }
+
 .button-light:hover {
   background-color: $secundary;
 }

@@ -20,6 +20,7 @@ section {
     .button {
       border: 1px solid $gray;
       border-radius: 30px;
+      text-decoration: none;
       
       &--with-image {
         padding: 2px 15px 2px 2px;

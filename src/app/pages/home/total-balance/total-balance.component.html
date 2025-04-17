@@ -24,7 +24,9 @@
 
   <article class="content-button m-t-16">
       @for (item of itensButtons; track $index) {
-        <a class="text-color-white button-light">
+        <a 
+          class="text-color-white button-light"
+          routerLink ="{{item.link}}">
           <fa-icon class="m-r-8" [icon]="item.icon"></fa-icon>
           {{item.name}}
         </a>
