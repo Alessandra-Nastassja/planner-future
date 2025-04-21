@@ -4,6 +4,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 
   .content-buttons {
     display: flex;
@@ -30,7 +31,7 @@ section {
       }
     }
     .button:hover {
-      background-color: #c2c2c2;
+      background-color: $gray;
       color: white;
     }
   }

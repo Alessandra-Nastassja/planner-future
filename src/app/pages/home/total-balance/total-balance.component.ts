@@ -24,7 +24,7 @@ import { NotificationsComponent } from "./notifications/notifications.component"
   styleUrl: './total-balance.component.scss'
 })
 export class TotalBalanceComponent {
-  isBlurred: boolean = true;
+  isBlurred: boolean = false;
 
   faEye = faEye;
   faArrowDown = faArrowDown;
