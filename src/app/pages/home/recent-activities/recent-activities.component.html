@@ -1,0 +1,18 @@
+<section class="m-l-16 m-t-16 m-b-16">
+  <app-header name="Recent activities" class="m-b-8"/>
+
+  @for (activity of recentActivities; track activity) {
+    <article>
+      <div class="content-activities--img">
+        <app-circle-image img="{{activity.img}}" />
+        <b>{{activity.name}}</b>
+      </div>
+      
+      <b 
+        class="content-activities--title"
+        [class.esconderValores]="isBlurred">
+        -{{activity.value}}
+      </b>
+    </article> 
+  }
+</section>

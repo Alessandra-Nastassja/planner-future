@@ -3,6 +3,10 @@ $secundary: #5b8c7c;
 $third: #95f173;
 $white: #fff;
 
+@mixin border-shadow {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 :host {
   display: flex;
   justify-content: space-evenly;
@@ -21,6 +25,7 @@ $white: #fff;
       background-color: $white;
       padding: 10px 75px 10px 10px;
       width: 100%;
+      @include border-shadow;
     }
     
     &__link {
@@ -31,6 +36,7 @@ $white: #fff;
       padding: 10px;
       border-radius: 0 15px 15px 0;
       background-color: $third;
+      @include border-shadow;
     }
   
     img {

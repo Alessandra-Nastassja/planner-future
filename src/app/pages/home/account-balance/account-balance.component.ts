@@ -13,7 +13,7 @@ import { CurrencyService } from '../../../../shared/services/currency.service';
   styleUrl: './account-balance.component.scss'
 })
 export class AccountBalanceComponent {
-  isBlurred: boolean = true;
+  isBlurred: boolean = false;
   
   faArrowRight = faArrowRight;
 

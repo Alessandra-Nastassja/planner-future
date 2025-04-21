@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class CurrencyService {
-  private visualizarValores = new BehaviorSubject<boolean>(true);
+  private visualizarValores = new BehaviorSubject<boolean>(false);
   visualizarValores$ = this.visualizarValores.asObservable();
 
   handleVisualizacaoValores(){

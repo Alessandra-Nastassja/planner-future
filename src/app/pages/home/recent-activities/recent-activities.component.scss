@@ -1,0 +1,19 @@
+section {
+  padding-top: 1rem;
+  margin: 1rem;
+  border-top: 1px solid #edecec;
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    .content-activities--img {
+      display: flex;
+      gap: 1rem;
+    }
+    .content-activities--title {
+      color: red;
+    }
+  }
+}
